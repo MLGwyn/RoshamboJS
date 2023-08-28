@@ -65,7 +65,7 @@ function checkForWinner() {
 
 function checkForEndGame() {
   if (currentPlayer > maxPlayers) {
-    checkForWinner()
+    setTimeout(checkForWinner, 1000)
   }
 }
 
